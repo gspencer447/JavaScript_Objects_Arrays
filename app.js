@@ -32,8 +32,8 @@ book.title = "The Hobbit by J.R.R Tolkien";
 book.pages = 295;
 book.readCount = 3;
 
-book.info = function(book){
-    return `${this.title}, ${this.pages}, ${this.readCount}`
+book.info = function(){
+    return `${book.title}, ${book.pages}, ${book.readCount}`
 }
 
 console.log(book.info());
