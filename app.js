@@ -47,4 +47,11 @@ obj.info = function(x){
 
 console.log(book.info(obj));
 
+//Exercise 3 Section
+
+let sentence = "The quick brown fox jumps over the lazy dog";
+    
+    let words = sentence.split(" ");
+    console.log(words);
+
 
