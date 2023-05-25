@@ -27,15 +27,24 @@ arraySum(arr2)
 console.log("EXERCISE 2:\n==========\n");
 
 let book = {};
+let obj = {};
+
+obj.title = "Outliers";
+obj.pages = 300;
+obj.readCount = true;
 
 book.title = "The Hobbit by J.R.R Tolkien";
 book.pages = 295;
 book.readCount = 3;
 
-book.info = function(){
-    return `${book.title}, ${book.pages}, ${book.readCount}`
+book.info = function(x){
+    return `${x.title}, ${x.pages}, ${x.readCount}`
 }
 
-console.log(book.info());
+obj.info = function(x){
+    return `${x.title}, ${x.pages}, ${x.readCount}`
+}
+
+console.log(book.info(obj));
 
 
