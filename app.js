@@ -1,6 +1,4 @@
-console.log("Hello World!\n==========\n");
-
-// Exercise 1 Section
+// // Exercise 1 Section
 console.log("EXERCISE 1:\n==========\n");
 
 var sum = 0;
@@ -23,7 +21,7 @@ function arraySum(arr) {
 arraySum(arr1)
 arraySum(arr2)
 
-// Exercise 2 Section
+// // Exercise 2 Section
 console.log("EXERCISE 2:\n==========\n");
 
 let book = {};
@@ -50,8 +48,20 @@ console.log(book.info(obj));
 //Exercise 3 Section
 
 let sentence = "The quick brown fox jumps over the lazy dog";
-    
-    let words = sentence.split(" ");
-    console.log(words);
 
+function reverseString(str){
+    
+    let splitSentence = sentence.split(' ');
+    let answer = [];
+    
+    for (let i = 0; i < splitSentence.length; i++) {
+            let reverseWord = splitSentence[i].split('').reverse().join("");
+            answer.push(reverseWord);
+        }
+        let newSentence = answer.join(' ');
+        console.log(newSentence);
+        return newSentence
+    }
+
+reverseString(sentence)
 
